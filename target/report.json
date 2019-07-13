@@ -1,0 +1,93 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Add a customer and validate",
+        "description": "",
+        "id": "to-add-cutomer;add-a-customer-and-validate",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 20808236400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The user clicks on add customer from telecom homepage",
+            "match": {
+              "location": "TwoDMap.the_user_clicks_on_add_customer_from_telecom_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2395441400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "The user inputs data",
+            "match": {
+              "location": "TwoDMap.the_user_inputs_data(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "fName",
+                  "lName",
+                  "email",
+                  "address",
+                  "phone"
+                ]
+              },
+              {
+                "cells": [
+                  "arka",
+                  "sen",
+                  "arka.sen@gmail.com",
+                  "chennai",
+                  "8981487573"
+                ]
+              },
+              {
+                "cells": [
+                  "amartya",
+                  "singh",
+                  "ama.sn@gmail.com",
+                  "kolkata",
+                  "8932487573"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 872189200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "validate the customer",
+            "match": {
+              "location": "TwoDMap.validate_the_customer()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag1"
+          }
+        ]
+      }
+    ],
+    "name": "To add cutomer",
+    "description": "",
+    "id": "to-add-cutomer",
+    "keyword": "Feature",
+    "uri": "src/test/resources/2DMap.feature",
+    "tags": []
+  }
+]
